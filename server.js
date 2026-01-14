@@ -7,6 +7,10 @@ app.get('/login', (req, res) => {
     res.send('bienvenue sur la page de login');
 });
 
+app.get('/info', (req, res) => {
+    res.json({ cle1: 'valeur1', cle2: 'valeur2' });
+});
+
 app.post('/register', (req, res) => {
     res.send('merci de vous créer un compte !');
 });
