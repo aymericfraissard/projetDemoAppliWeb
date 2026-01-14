@@ -2,15 +2,17 @@ const monInput  = document.getElementById('monInput');
 const monBouton = document.getElementById('monBouton');
 
 monBouton.addEventListener('click', () => {
-    fetch("/register", {
+    fetch('/register', {
         method: "POST",
         headers: {
-            "Content-Type" : "application/json"
+            'Content-Type' : 'application/json'
         },
-        body: JSON.stringify({ data: monInput.value })
+        body: JSON.stringify({ inputValue: monInput.value })
     })
     .then(response => response.text())
     .then(data => {
         alert(data);
     })
-});
+});   
+
+fetch('/info').then(response => response.json()).then(data => alert(data.cle1));

@@ -12,9 +12,9 @@ app.get('/info', (req, res) => {
 });
 
 app.post('/register', (req, res) => {
-    console.log("données reçues pour l'inscription");
+    console.log("données reçues pour l\'inscription");
     console.log(req.body);
-    res.send('inscription réussie !');
+    res.json({ message: 'inscription réussie !' });
 });
 
 app.listen(3000, () => {
