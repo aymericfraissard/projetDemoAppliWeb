@@ -1,7 +1,9 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res) => {
+app.use(express.static('public'));
+
+app.get('/login', (req, res) => {
     res.send('bienvenue sur la page de login');
 });
 
@@ -10,5 +12,5 @@ app.post('/register', (req, res) => {
 });
 
 app.listen(3000, () => {
-    console.log('Server is running on http://localhost:3000');
+    console.log('le server est accessible sur : http://localhost:3000');
 });
