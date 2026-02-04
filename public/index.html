@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>demoAppli</title>
-    <link rel="stylesheet" type="test/css" href="main.css">
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='main.css'>
+   
 </head>
 <body>
-    <h1>Welcome to demoAppli</h1>
-    <input type="text" id="monInput">
-    <input type="button" id="monBouton" value="Click Me">
+    <div>
+        <h2>Inscription</h2>
+        <input type="text" id="monInput" placeholder="name">
+        <input type="text" id="monInput2" placeholder="passe">
+        <input type="button" value="inscription!" id="monBouton">
+    </div>
+
+
+    <div>
+        <h2>Vote</h2>
+        <select name="list" id="usersList"></select>
+        <input type="text" id="monInputVote" placeholder="voter">
+        <input type="button" value="voter" id="monBoutonVote">
+    </div>
+
+
+    <div>
+        <h2>Test</h2>
+        <input type="button" value="Cliquez moi encore !" id="monBouton2">
+        Réponse : <div id="reponse">nada</div>
+    </div>
+
+    <div id="afficherId">
+        <h2>Liste des utilisateurs</h2>
+        <ul id="listUl">
+
+        </ul>
+    </div>
 </body>
-<script src="main.js"></script>
+<script src='main.js'></script>
 </html>
